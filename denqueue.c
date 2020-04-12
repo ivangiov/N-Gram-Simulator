@@ -27,7 +27,7 @@ void enqueue(queue *Q, char *text){
 
     //Kasus queue sudah terisi
     Q->rear->next = newnode;
-    newnode->next = Q->front;
+    newnode->next = NULL;
     Q->rear = newnode;
     return;
 }
@@ -54,31 +54,31 @@ void dequeue(queue *Q){
     }
 
     //Kasus terdapat lebih dari 1 node
-    Q->rear->next = Q->front->next;
     temp = Q->front;
     Q->front = Q->front->next;
     free(temp);
     return;
 }
 
-int main(){
-    queue Q1;
-    Q1.front =NULL;
-    Q1.rear=NULL;
-    enqueue(&Q1, "test1");
-    enqueue(&Q1, "test2");
-    enqueue(&Q1, "test3");    
-    enqueue(&Q1, "test4");    
-    printf("%s", Q1.front->word);    
-    dequeue(&Q1);
-    printf("%s", Q1.front->word);    
-    dequeue(&Q1);
-    printf("%s", Q1.front->word);
-    dequeue(&Q1);
-    printf("%s", Q1.front->word);
-    //dequeue(&Q1); //Pas fungsi ini dipanggil lagi, jadi error programnya
-    //enqueue(&Q1, "test1");
-    printf("%s", Q1.front->word);
+//Testing
+// int main(){
+//     queue Q1;
+//     Q1.front =NULL;
+//     Q1.rear=NULL;
+//     enqueue(&Q1, "test1");
+//     enqueue(&Q1, "test2");
+//     enqueue(&Q1, "test3");    
+//     enqueue(&Q1, "test4");    
+//     printf("%s", Q1.front->word);    
+//     dequeue(&Q1);
+//     printf("%s", Q1.front->word);    
+//     dequeue(&Q1);
+//     printf("%s", Q1.front->word);
+//     dequeue(&Q1);
+//     printf("%s", Q1.front->word);
+//     //dequeue(&Q1); //Pas fungsi ini dipanggil lagi, jadi error programnya
+//     //enqueue(&Q1, "test1");
+//     printf("%s", Q1.front->word);
 
-    return 0;
-}
+//     return 0;
+// }
