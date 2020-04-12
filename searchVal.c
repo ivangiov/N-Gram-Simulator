@@ -9,16 +9,29 @@ typedef struct node{
 
 typedef struct queue{
 	node *front, *rear;
+
 } queue;
 
+//Test
+node* randomHead(node **text,int n){
+	int r = (rand() % n) + 1;
+	int i = 0;
+	node *head = *text;
+	printf("%d\n",r);
+
+	for(i = 0; i < r; i++){
+		head = head->next;
+	}
+	return (head);
+}
+
 //Fungsi mencari value dari key pada text
-void searchValue(node **text, queue **key){
-	node *currText = *text;		//randomHead(text);
+void searchValue(node **text, queue **key, int n){
+	node *currText = randomHead(text,n);
 	node *testText;
 	node *currKey;
 	int found = 0;
 	while (found == 0){
-		printf("%s\n",currText->word);
 		currKey = (*key)->front;
 		testText = currText;
 		while(currKey!=NULL){
