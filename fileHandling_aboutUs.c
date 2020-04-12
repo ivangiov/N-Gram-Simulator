@@ -1,4 +1,46 @@
-void display(){
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void display();
+int fileHandling(char* filename);
+
+int fileHandling(char* filename){
+    //Fungsi untuk memuat data dari file txt ke node dan menghitung jumlah kata
+    //Input: nama file (string)
+    //Output: jumlah kata
+
+    char *word;
+    char line[1024];
+    int n;
+    FILE *fp;
+
+    n = 0;
+    fp = fopen(filename,"r");
+
+    if (!fp){
+        puts("File Not Found!");
+        return (-999);
+    }
+
+    while(fgets(line, 1024, fp)){
+
+        line[strcspn(line, "\n")] = 0;
+        word = strtok(line, " ");
+
+
+        while(word){
+            //printf("%s | ",word); //for test only
+            addnode(word);
+            n++;
+            word = strtok(NULL, " ");
+        }
+    }
+    fclose(fp);
+    return n;
+}
+
+void aboutUs(){
     puts("");
     puts("----------------------------------------------------------------------------");
     puts(" _____         _    ______                _                 _              ");
