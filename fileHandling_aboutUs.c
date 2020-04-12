@@ -17,22 +17,24 @@ int fileHandling(char* filename){
 
     n = 0;
     fp = fopen(filename,"r");
-
+    
+    //Jika file tidak ditemukan
     if (!fp){
         puts("File Not Found!");
         return (-999);
     }
-
+    
+    //Jika pembacaan belum mencapai EOF
     while(fgets(line, 1024, fp)){
 
-        line[strcspn(line, "\n")] = 0;
-        word = strtok(line, " ");
+        line[strcspn(line, "\n")] = 0;                      //Menghilangkan \n
+        word = strtok(line, " ");                           //Memisahkan kata dengan spasi
 
-
+        //Menambahkan kata ke node
         while(word){
             //printf("%s | ",word); //for test only
             addnode(word);
-            n++;
+            n++;                                            //Menghitung jumlah kata
             word = strtok(NULL, " ");
         }
     }
@@ -41,6 +43,7 @@ int fileHandling(char* filename){
 }
 
 void aboutUs(){
+    //Prosedur untuk menampilkan judul program dan credits
     puts("");
     puts("----------------------------------------------------------------------------");
     puts(" _____         _    ______                _                 _              ");
