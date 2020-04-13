@@ -9,34 +9,34 @@ typedef struct node{
     struct node *next;
 }node;
 
-node *AddNode (char*, node **);
-node *randRear (Node *, int);
+node *AddNode (char*, node *);
+node *randRear (node *, int);
 
 /* fungsi menambahkan node pada ujung akhir list */
-Node *AddNode (char *kata, Node **rear){
+node *AddNode (char *kata, node *rear){
     // deklarasi node baru
-    Node *temp = (Node*)malloc(sizeof(Node));
+    node *temp = (node*)malloc(sizeof(node));
     temp->word = (char*)malloc(sizeof(char));
     strcpy(temp->word,kata);
 
     /* untuk menangani list kosong */
     if (rear == NULL){
-        *rear = temp;
-        (*rear)->next = *rear;
+        rear = temp;
+        rear->next = rear;
         return rear;
     }
     
     /* untuk menangani list yang tidak kosong */
     strcpy(temp->word,kata);    // isi word dengan kata
-    temp->next = (*rear)->next;    // tambahkan node di ujung akhir list dan circular
-    (*rear)->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
-    *rear = temp;                // deklarasi rear baru pada temp
+    temp->next = rear->next;    // tambahkan node di ujung akhir list dan circular
+    rear->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
+    rear = temp;                // deklarasi rear baru pada temp
     
     return rear;
 }
 
 /* fungsi untuk mendapatkan posisi rear secara acak dari list */
-Node *randRear (Node *rear, int total){
+node *randRear (node *rear, int total){
     int rand_int;
     int i;
     rand_int = (rand() % (total - 0 + 1)); // generate random integer from 0 to total
