@@ -5,29 +5,32 @@
 
 /* deklarasi circular linked list */
 typedef struct node{ 
-    char word[15];
+    char *word;
     struct node *next;
-}Node;
+}node;
 
-Node *AddNode (char*, Node *);
-Node *randRear (Node *, int);
+node *AddNode (char*, node **);
+node *randRear (Node *, int);
 
 /* fungsi menambahkan node pada ujung akhir list */
-Node *AddNode (char *kata, Node *rear){
+Node *AddNode (char *kata, Node **rear){
+    // deklarasi node baru
+    Node *temp = (Node*)malloc(sizeof(Node));
+    temp->word = (char*)malloc(sizeof(char));
+    strcpy(temp->word,kata);
+
     /* untuk menangani list kosong */
     if (rear == NULL){
-        strcpy(rear->word,kata);
-        rear->next = rear;
+        *rear = temp;
+        (*rear)->next = *rear;
         return rear;
     }
     
     /* untuk menangani list yang tidak kosong */
-    Node *temp = (Node *) malloc(sizeof(Node)); // deklarasi node baru
-
     strcpy(temp->word,kata);    // isi word dengan kata
-    temp->next = rear->next;    // tambahkan node di ujung akhir list dan circular
-    rear->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
-    rear = temp;                // deklarasi rear baru pada temp
+    temp->next = (*rear)->next;    // tambahkan node di ujung akhir list dan circular
+    (*rear)->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
+    *rear = temp;                // deklarasi rear baru pada temp
     
     return rear;
 }
