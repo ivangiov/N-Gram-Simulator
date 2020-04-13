@@ -28,10 +28,10 @@ void searchValue(node **text, queue **key, int textLength){
 		currKey = (*key)->front;
 		testText = currText;
 
-		while(currKey!=NULL){
+		while(currKey != NULL){
 
 			//Kasus kata tidak sama
-			if (strcmp(testText->word,currKey->word)!=0)
+			if (strcmp(testText->word,currKey->word)!= 0)
 				break;
 
 			//Kasus kata sama
@@ -40,7 +40,7 @@ void searchValue(node **text, queue **key, int textLength){
 		}
 
 		//Jika key ditemukan pada text
-		if (currKey==NULL){
+		if (currKey == NULL){
 			found = 1;
 		}
 		else {
@@ -72,10 +72,9 @@ void generateText(node*text, int textLength, int word_count, int n_grams){
 
 	//Generate Text dengan jumlah kata = word_count
 	printf("... ");
-	for (int i = 0; i < word_count; ++i)
+	for (i = 0; i < word_count; ++i)
 	{
 		searchValue(&text,&key,textLength);
-		text = text->next;
 	}
 	printf("... \n");
 
