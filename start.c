@@ -5,12 +5,14 @@
 #include <math.h>
 #include <time.h>
 
-/*
 void loading(void){
- for(int x = 0; x<=100; ++x){
-  printf("\b\b\b%d%%%", x);
-  Sleep(10);
-  }}*/
+	int i;
+	printf("\nPlease wait Loading ...\n");
+	for(i=0; i<50; ++i){
+		Sleep(30);
+		printf("%c", 219);
+		}
+	}
 
 // deklarasi circular linked list
 typedef struct node{ 
@@ -44,6 +46,7 @@ void aboutUs(){
     puts("");
     puts("\t\t\t   Press Enter To Continue");
     while(getchar() != '\n');
+    loading();
     system("cls");
 }
 
@@ -150,7 +153,7 @@ int fileHandling(char* filename, node **rear){
 
         //Menambahkan kata ke node
         while(word){
-            printf("%s | ",word); //for test only
+            //printf("%s | ",word); //for test only
             addNode(word, rear);
             n++;                                            //Menghitung jumlah kata
             word = strtok(NULL, " ");
