@@ -13,26 +13,26 @@ node *AddNode (char*, node *);
 node *randRear (node *, int);
 
 /* fungsi menambahkan node pada ujung akhir list */
-node *AddNode (char *kata, node *rear){
+void AddNode (char *kata, node **rear){
    
     node *temp = (node*)malloc(sizeof(node));   // deklarasi node baru
     temp->word = (char*)malloc(sizeof(char));   // alokasikan memori untuk word
     strcpy(temp->word,kata);                    // isi word dengan kata
 
     /* untuk menangani list kosong */
-    if (rear == NULL){
-        rear = temp;
-        rear->next = rear;
-        return rear;
+    if (*rear == NULL){
+        *rear = temp;
+        (*rear)->next = *rear;
+        return;
     }
     
     /* untuk menangani list yang tidak kosong */
         
-    temp->next = rear->next;    // tambahkan node di ujung akhir list dan circular
-    rear->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
-    rear = temp;                // deklarasi rear baru pada temp
+    temp->next = (*rear)->next;    // tambahkan node di ujung akhir list dan circular
+    (*rear)->next = temp;          // pastikan temp berada pada ujung akhir dengan pointer rear sebelumnya mengarah ke temp
+    *rear = temp;                // deklarasi rear baru pada temp
     
-    return rear;
+    return;
 }
 
 /* fungsi untuk mendapatkan posisi rear secara acak dari list */
