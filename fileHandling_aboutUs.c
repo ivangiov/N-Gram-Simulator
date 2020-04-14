@@ -3,9 +3,9 @@
 #include <string.h>
 
 void display();
-int fileHandling(char* filename);
+int fileHandling(char* filename,node **rear);
 
-int fileHandling(char* filename){
+int fileHandling(char* filename,node **rear){
     //Fungsi untuk memuat data dari file txt ke node dan menghitung jumlah kata
     //Input: nama file (string)
     //Output: jumlah kata
@@ -33,7 +33,7 @@ int fileHandling(char* filename){
         //Menambahkan kata ke node
         while(word){
             //printf("%s | ",word); //for test only
-            addnode(word);
+            addnode(word,rear);
             n++;                                            //Menghitung jumlah kata
             word = strtok(NULL, " ");
         }
