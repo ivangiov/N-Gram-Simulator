@@ -1,16 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
 
-//Detect OS
-#ifdef _WIN32
-#include <Windows.h>
-#else
-#include <unistd.h>
-#endif
+
 
 //Prosedur untuk memunculkan loading bar
 void loading(void){
@@ -26,17 +15,6 @@ void loading(void){
     }
     puts("");
 }
-
-// deklarasi circular linked list
-typedef struct node{ 
-    char *word;
-    struct node *next;
-}node;
-
-// deklarasi queue
-typedef struct queue{
-    node *front, *rear;
-} queue;
 
 void aboutUs(){
     //Prosedur untuk menampilkan judul program dan credits
