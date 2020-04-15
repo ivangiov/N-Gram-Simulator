@@ -14,17 +14,18 @@
 
 //Prosedur untuk memunculkan loading bar
 void loading(void){
-	int i;
-	printf("\nPlease wait Loading ...\n");
-	for(i=0; i<50; ++i){
-		#ifdef _WIN32
-			Sleep(30);
-		#else
-			usleep(30*1000);
-		#endif
-		printf("%c", 219);
-		}
-	}
+    int i;
+    puts("\nPlease wait Loading ...");
+    for(i=0; i<50; ++i){
+        #ifdef _WIN32
+        Sleep(30);
+        #else
+        usleep(30*1000);
+        #endif
+        printf("%c", 219);
+    }
+    puts("");
+}
 
 // deklarasi circular linked list
 typedef struct node{ 
@@ -34,7 +35,7 @@ typedef struct node{
 
 // deklarasi queue
 typedef struct queue{
- node *front, *rear;
+    node *front, *rear;
 } queue;
 
 void aboutUs(){
