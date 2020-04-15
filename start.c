@@ -17,7 +17,11 @@ void loading(void){
 	int i;
 	printf("\nPlease wait Loading ...\n");
 	for(i=0; i<50; ++i){
-		Sleep(30);
+		#ifdef _WIN32
+			Sleep(30);
+		#else
+			usleep(30*1000);
+		#endif
 		printf("%c", 219);
 		}
 	}
