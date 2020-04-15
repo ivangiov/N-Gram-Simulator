@@ -60,7 +60,7 @@ void aboutUs(){
     puts("\t\t\t   Press Enter To Continue");
     while(getchar() != '\n');
     loading();
-    system("cls");
+    printf("\e[1;1H\e[2J");
 }
 
 void enqueue(queue *Q, char *text){
