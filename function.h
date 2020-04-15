@@ -1,5 +1,13 @@
+// deklarasi circular linked list
+typedef struct node{ 
+    char *word;
+    struct node *next;
+}node;
 
-
+// deklarasi queue
+typedef struct queue{
+    node *front, *rear;
+} queue;
 
 //Prosedur untuk memunculkan loading bar
 void loading(void){
