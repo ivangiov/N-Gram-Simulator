@@ -5,6 +5,14 @@
 #include <math.h>
 #include <time.h>
 
+//Detect OS
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
+//Prosedur untuk memunculkan loading bar
 void loading(void){
 	int i;
 	printf("\nPlease wait Loading ...\n");
