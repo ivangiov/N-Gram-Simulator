@@ -4,6 +4,16 @@
 #include <string.h>
 #include <math.h>
 #include <time.h>
+#include "function.h"
+
+//Detect OS
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
+
 
 void loading(void){
 	int i;
