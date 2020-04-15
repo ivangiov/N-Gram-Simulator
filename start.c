@@ -16,7 +16,7 @@
 void loading(void){
     int i;
     puts("\nPlease wait Loading ...");
-    for(i=0; i<50; ++i){
+    for(i=0; i<76; ++i){
         #ifdef _WIN32
         Sleep(30);
         #else
