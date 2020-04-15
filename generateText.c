@@ -1,25 +1,24 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include"circLinkedList_randRear.h"
 
+//Fungsi mengosongkan isi list
+void freeList(node** head, int n)
+{
+   node* temp;
+   int i;
 
-//Test : Fungsi ngerandom node awal di text
-node* randomHead(node **text,int textLength){
-	int r = (rand() % textLength) + 1; //Batas atas = jumlah kata pada text (textLength)
-	int i = 0;
-	node *head = *text;
-
-	//Mencari node ke-r
-	for(i = 0; i < r; i++){
-		head = head->next;
-	}
-
-	return (head);
+   for(i = 0; i < n; ++i){
+        temp = *head;
+       *head = (*head)->next;
+       free(temp);
+   }
 }
 
 //Fungsi mencari value dari key pada text
 void searchValue(node **text, queue **key, int textLength){
-	node *currText = randomHead(text,textLength);
+	node *currText = randRear(*text,textLength);
 	node *testText;
 	node *currKey;
 	int found = 0;
@@ -60,7 +59,7 @@ void generateText(node*text, int textLength, int word_count, int n_grams){
 	queue *key = (queue*)malloc(sizeof(queue));
 	key->front = NULL;
 	key->rear = NULL;
-	node *test = randomHead(&text,textLength);
+	node *test = randRear(text,textLength);
 	int i;
 
 	//Generate Key dengan jumlah kata = n_gram
@@ -78,5 +77,5 @@ void generateText(node*text, int textLength, int word_count, int n_grams){
 	}
 	printf("... \n");
 
-	free(key);
+	freeList(&(key->front),n_grams);
 }
