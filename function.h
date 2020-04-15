@@ -196,16 +196,16 @@ node *randRear (node *rear, int total){
 
 //Fungsi ngerandom node awal di text
 node* randomHead(node **text,int textLength){
- int r = (rand() % textLength) + 1; //Batas atas = jumlah kata pada text (textLength)
- int i = 0;
- node *head = *text;
+    int r = (rand() % textLength) + 1; //Batas atas = jumlah kata pada text (textLength)
+    int i = 0;
+    node *head = *text;
 
- //Mencari node ke-r
- for(i = 0; i < r; i++){
-  head = head->next;
- }
+    //Mencari node ke-r
+    for(i = 0; i < r; i++){
+        head = head->next;
+    }
 
- return (head);
+    return (head);
 }
 
 //Fungsi mencari value dari key pada text
