@@ -1,3 +1,5 @@
+#include <Windows.h>
+
 // deklarasi circular linked list
 typedef struct node{ 
     char *word;
@@ -33,7 +35,7 @@ void aboutUs(){
     puts("  | | _____  _| |_  | |_/ /__ _ _ __   __| | ___  _ __ ___  _ _______ _ __ ");
     puts("  | |/ _ \\ \\/ / __| |    // _` | '_ \\ / _` |/ _ \\| '_ ` _ \\| |_  / _ \\ '__|");
     puts("  | |  __/>  <| |_  | |\\ \\ (_| | | | | (_| | (_) | | | | | | |/ /  __/ |   ");
-    puts("  \\_/\\___/_/\\_\\__| \\_| \\_\\__,_|_| |_|\\__,_|\\___/|_| |_| |_|_/___\\___|_|   ");
+    puts("  \\_/\\___/_/\\_\\__|  \\_| \\_\\__,_|_| |_|\\__,_|\\___/|_| |_| |_|_/___\\___|_|   ");
     puts("----------------------------------------------------------------------------");
     puts("");
     puts("\t\t\t\tCreated by:\n");
@@ -140,7 +142,6 @@ int fileHandling(char* filename, node **rear){
         puts("Masukkan nama file kembali! : ");
         scanf("%s", newFilename);
         fp = fopen(newFilename, "r");
-        fileHandling(newFilename, rear);
     }
     
     free(newFilename);
