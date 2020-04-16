@@ -69,5 +69,5 @@ void aboutUs(){
     puts("\t\t\t   Press Enter To Continue");
     while(getchar() != '\n');
     loading();
-    printf("\e[1;1H\e[2J");
+    system("cls");
 }
