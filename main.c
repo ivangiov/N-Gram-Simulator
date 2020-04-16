@@ -37,7 +37,7 @@ int main(){
 			scanf("%s", filename);
 			textLength = fileHandling(filename, &linkedList);
 			free(filename);
-			printf("%d\n",textLength);
+			printf("Banyaknya kata: %d\n",textLength);
 			menu = menux();
 			}
 		else if(menu == 2){//mencetak kata-kata dari key n_gram
