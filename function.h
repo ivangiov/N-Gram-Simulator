@@ -39,7 +39,7 @@ void aboutUs(){
     puts("----------------------------------------------------------------------------");
     puts("");
     puts("\t\t\t\tCreated by:\n");
-    puts("\t\t Dhanurangga Al-Fadh             (13218005)");
+    puts("\t\t Dhanurangga Al Fadh             (13218005)");
     puts("\t\t Ivan Giovanni                   (13218006)");
     puts("\t\t Sarah Alyaa Tsaabitah           (13218011)");
     puts("\t\t Christian Dinata                (13218024)");
@@ -48,7 +48,7 @@ void aboutUs(){
     puts("\t\t\t   Press Enter To Continue");
     while(getchar() != '\n');
     loading();
-    printf("\e[1;1H\e[2J");
+    system("cls");
 }
 
 void enqueue(queue *Q, char *text){
@@ -135,15 +135,16 @@ int fileHandling(char* filename, node **rear){
 
     n = 0;
     fp = fopen(filename,"r");
-    
+
     //Jika file tidak ditemukan
     while (!fp){
         puts("File Not Found!");
         puts("Masukkan nama file kembali! : ");
         scanf("%s", newFilename);
         fp = fopen(newFilename, "r");
+        //fileHandling(newFilename, rear);
     }
-    
+
     free(newFilename);
     //Jika pembacaan belum mencapai EOF
     while(fgets(line, 1024, fp)){
@@ -267,7 +268,7 @@ int menux(){
 	printf("Pilihan menu: ");
 	scanf("%d", &output);
 	return(output);
-	}
+}
 
 void freeList(node **head, int n){
 	node *temp;
