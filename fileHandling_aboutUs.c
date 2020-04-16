@@ -29,16 +29,33 @@ int fileHandling(char* filename, node **rear){
     
     free(newFilename);
     //Jika pembacaan belum mencapai EOF
-    while(fgets(line, 1024, fp)){
+    while(fgets(line, 1024, fp)){                           //Membaca 1024 karakter pada file
 
         line[strcspn(line, "\n")] = 0;                      //Menghilangkan \n
-        word = strtok(line, " ");                           //Memisahkan kata dengan spasi
+        word = strtok(line, " ");                           //Memisahkan kata dengan pembatas spasi
 
         //Menambahkan kata ke node
         while(word){
-            //printf("%s | ",word); //for test only
-            addNode(word, rear);
-            n++;                                            //Menghitung jumlah kata
+            //Kasus pembacaan karakter khusus
+            for(i=0;i<strlen(word);i++){
+                //Hapus Tab
+                if (word[i] == 9)
+                    word[i] = 0;
+                //Mengubah quotation mark (non ASCII)
+                else if (word[i] == -30)
+                    word[i] = 34;
+                //Hilangkan sisa non ASCII characters
+                else if (word[i] < 0)
+                    word[i] = 1;
+            }
+            
+            //Memasukkan kata ke circular linked list
+            if (strlen(word)>0){
+                //printf("%s | ",word); //for test only
+                addNode(word, rear);
+                n++;                                            //Menghitung jumlah kata
+            }
+            
             word = strtok(NULL, " ");
         }
     }
