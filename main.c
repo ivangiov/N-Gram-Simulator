@@ -16,8 +16,7 @@
 int main(){
 	srand(time(0));
 	
-	node* linkedList = (node*)malloc(sizeof(char));
-	linkedList = NULL;
+	node* linkedList;
      
 	int textLength = 0;
 	int n_gram;
@@ -32,6 +31,9 @@ int main(){
 	menu = menux();
 	while(menu != 3){
 		if (menu == 1){//input file eksternal
+			freeList(&linkedList, textLength);
+			linkedList = (node*)malloc(sizeof(char));
+			linkedList = NULL;
 			printf("Masukkan nama file : ");
 			char* filename = (char*)malloc(sizeof(char));
 			scanf("%s", filename);
