@@ -5,13 +5,14 @@
 void display();
 int fileHandling(char* filename,node **rear);
 
-int fileHandling(char* filename,node **rear){
+int fileHandling(char* filename, node **rear){
     //Fungsi untuk memuat data dari file txt ke node dan menghitung jumlah kata
     //Input: nama file (string)
     //Output: jumlah kata
 
-    char *word;
+    char *word = malloc(sizeof(*word));
     char line[1024];
+    char *newFilename = malloc(sizeof(*newFilename));
     int n;
     FILE *fp;
 
@@ -19,11 +20,14 @@ int fileHandling(char* filename,node **rear){
     fp = fopen(filename,"r");
     
     //Jika file tidak ditemukan
-    if (!fp){
+    while (!fp){
         puts("File Not Found!");
-        return (-999);
+        puts("Masukkan nama file kembali! : ");
+        scanf("%s", newFilename);
+        fp = fopen(newFilename, "r");
     }
     
+    free(newFilename);
     //Jika pembacaan belum mencapai EOF
     while(fgets(line, 1024, fp)){
 
@@ -33,11 +37,12 @@ int fileHandling(char* filename,node **rear){
         //Menambahkan kata ke node
         while(word){
             //printf("%s | ",word); //for test only
-            addnode(word,rear);
+            addNode(word, rear);
             n++;                                            //Menghitung jumlah kata
             word = strtok(NULL, " ");
         }
     }
+    free(word);
     fclose(fp);
     return n;
 }
@@ -51,7 +56,7 @@ void aboutUs(){
     puts("  | | _____  _| |_  | |_/ /__ _ _ __   __| | ___  _ __ ___  _ _______ _ __ ");
     puts("  | |/ _ \\ \\/ / __| |    // _` | '_ \\ / _` |/ _ \\| '_ ` _ \\| |_  / _ \\ '__|");
     puts("  | |  __/>  <| |_  | |\\ \\ (_| | | | | (_| | (_) | | | | | | |/ /  __/ |   ");
-    puts("  \\_/\\___/_/\\_\\__| \\_| \\_\\__,_|_| |_|\\__,_|\\___/|_| |_| |_|_/___\\___|_|   ");
+    puts("  \\_/\\___/_/\\_\\__|  \\_| \\_\\__,_|_| |_|\\__,_|\\___/|_| |_| |_|_/___\\___|_|   ");
     puts("----------------------------------------------------------------------------");
     puts("");
     puts("\t\t\t\tCreated by:\n");
@@ -63,5 +68,6 @@ void aboutUs(){
     puts("");
     puts("\t\t\t   Press Enter To Continue");
     while(getchar() != '\n');
-    system("cls");
+    loading();
+    printf("\e[1;1H\e[2J");
 }
