@@ -142,7 +142,6 @@ int fileHandling(char* filename, node **rear){
         puts("Masukkan nama file kembali! : ");
         scanf("%s", newFilename);
         fp = fopen(newFilename, "r");
-        //fileHandling(newFilename, rear);
     }
 
     free(newFilename);
