@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void display();
+void aboutUs();
 int fileHandling(char* filename,node **rear);
 
 int fileHandling(char* filename, node **rear){
