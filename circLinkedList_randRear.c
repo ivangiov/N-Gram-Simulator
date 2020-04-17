@@ -9,7 +9,7 @@ typedef struct node{
     struct node *next;
 }node;
 
-node *AddNode (char*, node *);
+void AddNode (char*, node **);
 node *randRear (node *, int);
 
 /* fungsi menambahkan node pada ujung akhir list */
