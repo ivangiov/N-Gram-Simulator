@@ -1,0 +1,148 @@
+Kumpulan Komentar Laporan Praktikum ELKA oleh Asisten Praktikum Elka EL2205:)
+*Generate your Laprak's comments!*
+
+-Analisis sudah baik !
+-Hasil simulasi harap dicantumkan dan dibandingkan dengan hasil percobaan
+-tugas pendahuluan harap dilengkapi
+-gambar bcl  pada laporan harap diberi skala
+-rangkaian pada  TP diberi nama dan nim dan dilengkapi lagi TP nya
+-belajar lagi untuk tes awal
+-kesimpulan sebaiknya dibuat dalam poin
+-Semua hasil simulasi dicantumkan pada laporan dan dibandingkan 
+-Hasil harap menggunakan gambar BCL
+-langkah kerja dibuat dalam bentuk diagram alir
+-hasil percobaan dinalisis jangan hanya mencantumkan gambar
+-hasil tabel dibuat jangan hanya foto dari bcl
+-gambar dari bcl dipisah per grafik bukan perhalaman
+-kesimpulan diperbaiki dan dibuat dalam poin-poin
+-jangan telat kumpul laporan lagi ya
+-langkah percobaan fontnya terlalu kecil, ga keliatan
+-analisis sudah oke, namun lebih baik jika dijelaskan seperti pengaruh kinerja dioda pada tiap rangkaian, kenapa 1 dioda bisa menghasilkan setengah gelombang, kenapa 2 dioda & bridge menghasilkan 1 gelombang
+-background simulasi jangan hitam, ga keliatan
+-analisis penyearah sudah baik, namun lebih baik dijelaskan perbedaan antara rangkaian gelombang setengah dengan gelombang penuh dari sisi teoritisnya (kinerja dioda tiap rangkaian, daerah kerja dioda, dsb) dibandingkan hanya menverifikasi hasil percobaan
+-analisis tidak lengkap
+-analisis diperdalam lagi
+-tabel hasil percobaan penyearah gelombang dicantumkan dan dianalisis
+-gambar bcl pada laporan harap diberi skala.
+-kesimpulan diperbaiki lagi
+-tes awal harap dipersiapkan
+-simulasi LTSpice karakteristik dioda gaada
+-analisis penyearah mungkin lebih baik bila dijelaskan kinerja dioda pada masing2 rangkaian, mengapa nilai yg diperoleh tiap rangkaian berbeda, apa pengaruh jumlah dioda di tiap rangkaian dg hasil yg didapat
+-analisis clipper & clamper sudah baik
+-foto BCL jangan 1 halaman, dicrop satu2 grafik yg diperlukan biar keliatan
+-tegangan ripple kok ga dihitung?
+-analisis penyearah ga tepat, dijelaskan dr sisi kinerja dioda pada rangkaian kenapa bisa setengah gelombang, kenapa bisa satu gelombang
+-analisis penyearah ga tepat. lebih baik dijelaskan pengaruh dioda pada tiap rangkaian, bagaimana kinerja dioda dan pengaruh jumlahnya yg menghasilkan gelombang yang berbeda
+-analisis clipper&clamper ga tepat
+-kesimpulan dalam poin jangan paragraf
+-simulasi LTSpice bukan teori tapi sebuah verifikasi dr teori yang ada
+-simulasi LTSpicenya mana yaa
+-foto BCL jangan 1 halaman, dicrop satu2 grafik yg diperlukan biar keliatan
+-analisis penyearah sudah baik, tapi lebih baik jiak dijelaskan dari kinerja dioda utk tiap rangkaian, spt kenapa 1 dioda menghasilkan setengah gelombang, kenapa 2 dioda & bridge menghasilkan 1 gelombang
+-kesimpulan kepanjangan, intinya saja
+-kok gaada simulasi LTSpice yaa
+-analisis sudah oke
+-simulasi LTSpicenya mana?
+-analisis kurang, tidak menjawab secara teoritis
+-mana yaa simulasi LTSpicenyaaa
+-analisis penyearah tidak tepat. tidak ada teori yang mendasari, simulasi tidak ada yang ideal, tidak menjawab tujuan yang diinginkan dg melakukan percobaan menggunakan 3 rangkaian penyearah berbeda
+-hasil dan analisis jangan hanya menjabarkan hasil yg didapat saja tapi juga dianalisa kenapa hasilnya bisa begitu, bandingkan dg teori yang dijelaskan di kelas
+-analisis clamper sudah baik
+gugur modul jdi gaada nilainya ya, semangat utk praktikum selanjutnya!
+-kedepannya, hasil simulasi dimasukan ke bagian hasil & analisis jangan di metodologi
+-analisis penyearah 2 dioda, clipper, & clamper gaada
+-jika mengambil gambar / studi pustaka dr buku modul, sertakan dalam daftar pustaka
+-Lengkapi kejadian di lab pada BCL, buat per percobaan
+-Tulis nama di laporan
+-Sertakan hasil simulasi
+-Buat analisis dengan perbandingan dengan teori, jangan hanya secara teknis
+-Sertakan tandatangan dan tanggal percobaan di tiap halaman BCL
+-Lengkapi kejadian di lab di setiap percobaan
+-Berikan keterangan pada hasil simulasi(Berapa Vin, Berapa Vout, Berapa V/V)
+-Sudah baik
+-Abstrak berisi sedikit rangkuman praktikum(apa yang dilakukan, hasil kuantitatif yang didapatkan, kesimpulan) 
+-Tanggalnya jangan salah ya
+-nim asisten di laporan jangan lupa
+-bagian simulasi analisisnya gaada ya
+-Setiap rangkaian di TP dituliskan nama dan NIM ya.
+-Foto 3x4 pada BCL jangan lupa
+-Hasil-hasil grafik lengkapi lagi
+-Format laporan tetap dijaga(justify pada 2 kolum)
+-Laporan WAJIB mencantumkan hasil simulasi juga untuk dibandingkan(gambar dan analisis)
+-Gambar di TP diperbesar ya. Juga ditambahkan keterangan juga(misal: dari simulasi didapat V = ...)
+-Ada beberapa grafik yang sumbunya lupa ditulis
+-Urutan data BCL sesuai di buku modul
+-Laporan WAJIB mencantumkan hasil simulasi juga untuk dibandingkan(gambar dan analisis)
+-TP yang disimulasikan seluruh percobaan, termasuk perubahan nilai komponen dan lainnya.
+-Ditambahkan keterangan juga ya(misal: dari simulasi didapat V = ...)
+-NIM asisten jangan salah tulis ya
+-Datanya dilengkapi lagi
+-Tidak boleh ada space kosong di BCL
+-Jangan telat ngumpulin BCL lagi ya
+-Bagian metodologi dijabarkan lagi secara detail langkah-langkah yang dilakukan beserta pengesetan alat
+-Seluruh percobaan yang digambar di BCL WAJIB disertakan juga di laporan
+-Kesimpulannya lebih dijabarkan lagi
+-Analisanya diperdalam lagi
+Analisis untuk setiap bagian dilengkapi lagi ya dan data yang didapatkan dibandingkan dengan simulasi pada ltspice.
+-Jangan lupa kalimat template laporan dihapus
+-Analisisnya diperdalam lagi ya
+-good job
+-Lain kali jangan telat ya
+-Analisis diperdalam ya
+-analisis juga ga tepat
+-format daftar pusaka salah
+-background simulasi jangan hitam, ga keliatan
+-analisis karakteristik dioda ga tepat, gaada teori yg mendasari
+-tabel dibuat lagi di word jangan foto BCL
+-Jangan lupa keterangan sumbu dan titik 0 pada grafik
+-Tulis NIM asisten yah
+-Kalau mencatat data tolong sesuai dengan urutan percobaan. Oleh karena itu dibuat dahulu di rumah space-nya di BCL
+-Gambar set alat yang digunakan. Nilai BCL berkurang banyak karena hal ini
+-Jangan ada data yang kosong lagi lain kali di BCL
+-Tolong diperhatikan lagi tugas pendahuluan dan tes awalnya
+-Dibuat bagian pendahuluan secara lengkap ya
+-Analisis percobaan jangan hanya menyebutkan hasil. Jelaskan cara kerja rangkaian tersebut serta dibandingkan dengan hasil dari LTspice
+-Kesimpulan diperbaiki lagi
+teori dasar dilengkapi lagi
+-gambar rangkaian yang digunakan dalam praktikum dimasukkan juga ke metodologi
+-grafik nya kenapa tidak ada skala dan label?
+-kesimpulan jangan asal dibuat
+-data simulasi diperlengkap
+-kesimpulan diperhatikan
+-belajar lagi buat tes awalnya
+-abstrak jangan lupa
+-kesimpulan lebih diperhatikan lagi, ada beberapa yang salah
+-data dari hasil simulasi (screenshot) dan hasil percobaan (foto dari BCL untuk grafik, bikin tabel di word untuk tabel) semua dimasukkan ke laporan
+-caption gambar dan tabel diperhatikan
+-Jangan lupa tulis kejadian di setiap percobaan
+-Analisis jelasin cara kerja rangkaian & dibandingkan dengan LTspice. Jangan cuma menyatakan hasil percobaan
+-Kesimpulan kalau bisa dibuat dalam poin
+-Kalo ada kerusakan tolong dikasih tau ke asisten untuk dibenarkan
+-Jangan lupa titik 0 dan keterangan sumbu pada setiap grafik
+-Kejadian ditulis di setiap percobaan yak
+-Data-nya tolong mengikuti tabel yah, banyak yang kosong
+-Pendahuluan tolong diperbaiki lagi
+-Cara kerja rangkaian tolong dijelaskan
+-Masukkan LTspice dan jelaskan perbandingannya dengan hasil asli
+-Lengkapi set alat di BCL untuk setiap percobaan
+-Beri keterangan skala dan sumbu grafik pada BCL
+-Background hasil simulasi jangan hitam
+-Buat analisis lebih mendalam, bisa dibandingkan dengan teori
+-Buat keterangan sumbu dan skala grafik BCL
+-Lampirkan hasil simulasi pada laporan supaya bisa membandingkan dengan hasil percobaan
+-Analisis dibuat lebih dalam, bisa bandingkan dengan teori ataupun hasil simulasi
+-Lengkapi keterangan sumbi, skala, dan titik nol pada BCL
+-Background simulasi jangan warna hitam
+-Beri analisis hasil lebih mendalam
+-Belajar tes awal lebih serius ya
+Semangat praktikum selanjutnya!
+-perhatikan format
+-gambar per grafik di laporan
+-analisis diperdalam
+-Kesimpulan buat dalam poin
+-analisis dipertajam
+-analisis harus ada : prinsip kerja rangkaian, analisis hasil yang diharapkan dan hasil percobaan
+-analisisnya masih ada beberapa yang tidak sesuai teori
+-data simulasi tidak lengkap (dioda, penyearah)
+-data dari hasil simulasi (screenshot) harus ada dan hasil percobaan (foto dari BCL untuk grafik, bikin tabel di word untuk tabel), untuk foto grafik tolong lebih rapi lagi di laporannya, untuk tabel disalin ulang di tabel word, jangan langsung foto dari BCL
+-kesimpulan lebih diperhatikan lagi
