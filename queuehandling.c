@@ -4,18 +4,10 @@ Tester : Sarah Alyaa Tsaabitah (13218011)
 Deskripsi : Berisi implementasi fungsi untuk mengolah queue. Terdapat dua fungsi yaitu enqueue untuk menambah data dan dequeue untuk mengeluarkan data
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "datatype.c"
 
-typedef struct node{
-	char *word;
-	struct node *next;
-} node;
-
-typedef struct queue{
-	node *front, *rear;
-} queue;
+#ifndef QUEUEHANDLING_C
+#define QUEUEHANDLING_C
 
 void enqueue(queue *Q, char *text){
     //Membuat node baru dan meletakkan datanya
@@ -65,3 +57,4 @@ void dequeue(queue *Q){
     free(temp);
     return;
 }
+#endif
