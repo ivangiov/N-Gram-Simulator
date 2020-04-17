@@ -1,16 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
+#include "datatype.c"
 
-/* deklarasi circular linked list */
-typedef struct node{ 
-    char *word;
-    struct node *next;
-}node;
-
-void AddNode (char*, node **);
-node *randRear (node *, int);
+#ifndef CIRCLINKEDLIST_RANDREAR_C
+#define CIRCLINKEDLIST_RANDREAR_C
 
 /* fungsi menambahkan node pada ujung akhir list */
 void AddNode (char *kata, node **rear){
@@ -52,3 +43,4 @@ node *randRear (node *rear, int total){
 
     return rear;
 }
+#endif
