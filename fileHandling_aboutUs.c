@@ -52,7 +52,7 @@ int fileHandling(char* filename, node **rear){
             //Memasukkan kata ke circular linked list
             if ((int)strlen(word)>0){
                 //printf("%s | ",word); //for test only
-                addNode(word, rear);
+                AddNode(word, rear);
                 n++;                                            //Menghitung jumlah kata
             }
             
