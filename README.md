@@ -10,11 +10,13 @@ Anggota:
 
 # Cara Compile
 Untuk mengompilasi program, ikuti langkah berikut:
-1. 
+1. Pastikan komputer memiliki kompiler gcc
+2. Buka cmd pada Windows
+2. Ketik gcc main.c -o main
 
 # Penggunaan Program
 Untuk menggunakan program ikuti step berikut:
-1. Run program
+1. Run program main.exe
 2. Tekan enter setelah melihat tampilan utama (berisi judul dan nama anggota)
 3. Terdapat pilian menu:
     - Menu 1: menginput nama file eksternal
