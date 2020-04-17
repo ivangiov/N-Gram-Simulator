@@ -1,4 +1,8 @@
-#include "function.h"
+#include "integrating.h"
+#include "generateText.h"
+#include "queuehandling.h"
+#include "fileHandling_aboutUs.h"
+#include "circLinkedList_randRear.h"
 
 //Detect OS
 #ifdef _WIN32
