@@ -1,6 +1,4 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include "queuehandling.h"
 #include"circLinkedList_randRear.h"
 
 //Fungsi mengosongkan isi list
