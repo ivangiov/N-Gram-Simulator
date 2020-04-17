@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "integrating.h"
+#include "circLinkedList_randRear.h"
 
-void aboutUs();
-int fileHandling(char* filename,node **rear);
+#ifndef FILEHANDLING_ABOUTUS_C
+#define FILEHANDLING_ABOUTUS_C
 
 int fileHandling(char* filename, node **rear){
     //Fungsi untuk memuat data dari file txt ke node dan menghitung jumlah kata
     //Input: nama file (string)
     //Output: jumlah kata
 
-    char *word = malloc(sizeof(*word));
+    char *word = (char*)malloc(sizeof(*word));
     char line[1024];
-    char *newFilename = malloc(sizeof(*newFilename));
+    char *newFilename = (char*)malloc(sizeof(*newFilename));
     int n;
+    int i;
     FILE *fp;
 
     n = 0;
@@ -37,7 +37,7 @@ int fileHandling(char* filename, node **rear){
         //Menambahkan kata ke node
         while(word){
             //Kasus pembacaan karakter khusus
-            for(i=0;i<strlen(word);i++){
+            for(i=0;i<(int)strlen(word);i++){
                 //Hapus Tab
                 if (word[i] == 9)
                     word[i] = 0;
@@ -50,7 +50,7 @@ int fileHandling(char* filename, node **rear){
             }
             
             //Memasukkan kata ke circular linked list
-            if (strlen(word)>0){
+            if ((int)strlen(word)>0){
                 //printf("%s | ",word); //for test only
                 addNode(word, rear);
                 n++;                                            //Menghitung jumlah kata
@@ -88,3 +88,5 @@ void aboutUs(){
     loading();
     system("cls");
 }
+
+#endif
