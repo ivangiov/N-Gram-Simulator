@@ -32,7 +32,6 @@ Kumpulan Komentar Laporan Praktikum ELKA oleh Asisten Praktikum Elka EL2205:)
 -foto BCL jangan 1 halaman, dicrop satu2 grafik yg diperlukan biar keliatan
 -tegangan ripple kok ga dihitung?
 -analisis penyearah ga tepat, dijelaskan dr sisi kinerja dioda pada rangkaian kenapa bisa setengah gelombang, kenapa bisa satu gelombang
--analisis penyearah ga tepat. lebih baik dijelaskan pengaruh dioda pada tiap rangkaian, bagaimana kinerja dioda dan pengaruh jumlahnya yg menghasilkan gelombang yang berbeda
 -analisis clipper&clamper ga tepat
 -kesimpulan dalam poin jangan paragraf
 -simulasi LTSpice bukan teori tapi sebuah verifikasi dr teori yang ada
@@ -62,6 +61,7 @@ gugur modul jdi gaada nilainya ya, semangat utk praktikum selanjutnya!
 -Sudah baik
 -Abstrak berisi sedikit rangkuman praktikum(apa yang dilakukan, hasil kuantitatif yang didapatkan, kesimpulan) 
 -Tanggalnya jangan salah ya
+-analisis penyearah ga tepat. lebih baik dijelaskan pengaruh dioda pada tiap rangkaian, bagaimana kinerja dioda dan pengaruh jumlahnya yg menghasilkan gelombang yang berbeda
 -nim asisten di laporan jangan lupa
 -bagian simulasi analisisnya gaada ya
 -Setiap rangkaian di TP dituliskan nama dan NIM ya.
@@ -103,7 +103,7 @@ Analisis untuk setiap bagian dilengkapi lagi ya dan data yang didapatkan dibandi
 -Dibuat bagian pendahuluan secara lengkap ya
 -Analisis percobaan jangan hanya menyebutkan hasil. Jelaskan cara kerja rangkaian tersebut serta dibandingkan dengan hasil dari LTspice
 -Kesimpulan diperbaiki lagi
-teori dasar dilengkapi lagi
+-teori dasar dilengkapi lagi
 -gambar rangkaian yang digunakan dalam praktikum dimasukkan juga ke metodologi
 -grafik nya kenapa tidak ada skala dan label?
 -kesimpulan jangan asal dibuat
