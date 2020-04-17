@@ -4,6 +4,10 @@ Tester : Sarah Alyaa Tsaabitah (13218011)
 Deskripsi Header : Berisi deklarasi fungsi untuk mengolah queue. Terdapat dua fungsi yaitu enqueue untuk menambah data dan dequeue untuk mengeluarkan data
 */
 
+#include "queuehandling.c"
+
+#ifndef QUEUEHANDLING_H
+#define QUEUEHANDLING_H 
 
 void enqueue(queue *Q, char *text);
 //Fungsi untuk menambah data pada struktur data queue
@@ -14,3 +18,5 @@ void dequeue(queue *Q);
 //Fungsi untuk mengeluarkan satu buah data pada bagian front queue
 //Input : pointer queue Q
 //Output : queue Q yang data pada front telah dihapus
+
+#endif
